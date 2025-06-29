@@ -18,7 +18,7 @@ Users can now securely log in using their GitHub credentials alongside the tradi
 
 ## 📸 Demo
 
-[Github Login demo](https://youtube.com/shorts/q67ZlZu8xdM?si=WtRC_37f-jG62wVs)
+[![Watch the Demo](https://img.youtube.com/vi/q67ZlZu8xdM/hqdefault.jpg)](https://www.youtube.com/watch?v=q67ZlZu8xdM)
 
 ---
 
