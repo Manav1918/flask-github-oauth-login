@@ -80,6 +80,11 @@ pip install flask requests-oauthlib flask-mail mysql-connector-python
 5. Session is created with GitHub username and email
 
 ---
+## 📸 Youtube Tutorial
+
+[![Watch the Tutorial](https://img.youtube.com/vi/ir78ZGgKv2s/hqdefault.jpg)](https://youtu.be/ir78ZGgKv2s)
+
+---
 
 ## 👨‍💻 Author
 
