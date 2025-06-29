@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Login and Registration Form in HTML & CSS </title>-->
+    <link rel="stylesheet" href="../static/fliplogin.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Wake & Bake</title>
+    
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <div class="flash-messages">
+                {% for category, message in messages %}
+                    <div class="flash-message {{ category }}">{{ message }}</div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endwith %}
+
+   </head>
+<body>
+  <div class="container">
+    <input type="checkbox" id="flip">
+    <div class="cover">
+      <div class="front">
+        <img src="../static/images/frontImg.jpg" alt="">
+        <div class="text">
+          <span class="text-1">Hey Foody, Welcome Back!<br>Ready to order?</span>
+          <span class="text-2">Let's get started.</span>
+        </div>
+      </div>
+      <div class="back">
+        <img class="backImg" src="../static/images/backImg.jpg" alt="">
+        <div class="text">
+          <span class="text-1">Wake & Bake—Serving Joy<br> One Bite at a Time!</span>  
+          <span class="text-2">Deliciously fast, irresistibly fresh—your cravings, our priority! 🚀🔥</span>
+
+        </div>
+      </div>
+    </div>
+    <div class="forms">
+        <div class="form-content">
+          <div class="login-form">
+            <div class="title">Login</div>
+            <form action="/login" method="post">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="login-email" name="email" placeholder="Enter your Email" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+              </div>
+              <div class="remember-forgot" style="display: flex; align-items: center; justify-content: space-between;">
+                <div class="remember" style="display: flex; align-items: center;">
+                  <input type="checkbox" id="remember-me">
+                  <label for="remember-me" style="margin-left: 5px;">Remember me</label>
+                </div>
+                <!-- Forgot password link -->
+                <div class="text" style="margin-left: 15px;">
+                  <a href="#" onclick="validateForgotPassword(event);">Forgot password?</a>
+                </div>
+              </div>
+                
+              <div class="button input-box">
+                <input type="submit" value="Submit">
+              </div>
+                <div class="text" style="text-align: center; width: 100%;">Or,</div>
+            </form>
+
+             
+              <div style="text-align: center; width: 100%;" class="github-login">
+                  <a href="{{ url_for('github_login') }}">
+                    <i class="fab fa-github me-3"></i>
+                    <span>Login with GitHub</span>
+                  </a>
+              </div>
+
+              <div class="text sign-up-text">Don't have an account? <label for="flip">Sigup now</label></div>
+            </div>
+        
+      </div>
+        <div class="signup-form">
+          <div class="title">Signup</div>
+        <form action="/register" method="post">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-user"></i>
+                <input type="text" id="username" name="username" placeholder="Enter your name" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+              </div>
+              <div class="button input-box">
+                <input type="submit" value="Submit">
+              </div>
+              <div class="text sign-up-text">Already have an account? <label for="flip">Login now</label></div>
+            </div>
+      </form>
+    </div>
+    </div>
+    </div>
+  </div>
+  <!-- Forgot password form -->
+  <form id="forgot-form" action="{{ url_for('forgot_password') }}" method="POST">
+    <input type="hidden" name="email" id="forgot-email">
+  </form>
+<!-- Script for forgot password validation -->
+<script>
+  function validateForgotPassword(event) {
+      event.preventDefault();  // ✅ Prevents page from jumping to the top
+
+      let emailInput = document.querySelector('#login-email').value.trim();
+      
+      if (!emailInput) {
+          alert("Please enter your email to reset the password.");  // Show alert if email is empty
+          return;  // Stop form submission
+      }
+
+      document.getElementById('forgot-email').value = emailInput;
+      document.getElementById('forgot-form').submit();
+  }
+</script>
+</body>
+</html>

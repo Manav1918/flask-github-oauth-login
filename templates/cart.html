@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}  
+<title>Menu</title>
+{% endblock %}
+{% block content %}
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Menu</h1>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h2 class="card-title">Pizza</h2>
+                <p class="card-text">Price: $10</p>
+                <form action="#" method="POST">
+                    <input type="hidden" name="item_name" value="Pizza">
+                    <input type="hidden" name="price" value="10">
+                    <div class="mb-3">
+                        <label for="quantity" class="form-label">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" class="form-control" min="1" value="1">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="card-body">
+                <h2 class="card-title">Burger</h2>
+                <p class="card-text">Price: $5</p>
+                <form action="#" method="POST">
+                    <input type="hidden" name="item_name" value="Burger">
+                    <input type="hidden" name="price" value="5">
+                    <div class="mb-3">
+                        <label for="quantity" class="form-label">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" class="form-control" min="1" value="1">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <a href="/view_cart" class="btn btn-success">View Cart</a>
+        </div>
+    </div>
+{% endblock %}

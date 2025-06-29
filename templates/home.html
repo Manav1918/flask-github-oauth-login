@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}
+<title>Wake n Bake - Home</title>
+{% endblock %}
+
+{% block content %}
+<section class="hero text-center py-5 bg-light">
+    <div class="logo">
+        <img src="./static/wakenbake-logo.png" alt="Cloud Kitchen Logo" width="320" height="240">
+    </div>
+    <h1 class="fw-bold">Delicious Meals, Delivered Fast</h1>
+    <p>Fresh ingredients, expertly prepared, delivered to your door.</p>
+    <a href="#menu" class="btn btn-success">Order Now</a>
+</section>
+
+<section id="menu" class="container py-5">
+    <h2 class="text-center mb-4">Our Menu</h2>
+    <div class="row text-center justify-content-center">
+        <div class="col-md-3 menu-item p-3 mx-1 my-1" id="cake" data-bs-toggle="modal" data-bs-target="#cakeModal">Cake</div>
+        <div class="col-md-3 menu-item p-3 mx-1 my-1" id="pizza" data-bs-toggle="modal" data-bs-target="#pizzaModal">Pizza</div>
+        <div class="col-md-3 menu-item p-3 mx-1 my-1" id="burger" data-bs-toggle="modal" data-bs-target="#burgerModal">Burger</div>
+        <div class="col-md-3 menu-item p-3 mx-1 my-1" id="pasta" data-bs-toggle="modal" data-bs-target="#pastaModal">Pasta</div>
+        <div class="col-md-3 menu-item p-3 mx-1 my-1" id="salads" data-bs-toggle="modal" data-bs-target="#saladsModal">Salads</div>
+        <div class="col-md-3 menu-item p-3 mx-1 my-1" id="sprouts" data-bs-toggle="modal" data-bs-target="#sproutsModal">Sprouts</div>
+        <div class="col-md-3 menu-item p-3 mx-1 my-1" id="desserts" data-bs-toggle="modal" data-bs-target="#dessertsModal">Desserts</div>
+    </div>
+</section>
+
+<section id="about" class="text-center py-5 bg-light">
+    <h2>About Us</h2>
+    <p>We are a passionate team dedicated to bringing the best flavors to your doorstep.</p>
+</section>
+
+<section id="contact" class="text-center py-5">
+    <h2>Contact Us</h2>
+    <p>Email: info@wakenbake.com | Phone: +91 8092184878</p>
+</section>
+{% endblock %}

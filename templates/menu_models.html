@@ -1,0 +1,324 @@
+<!-- Cake Modal -->
+<div class="modal fade" id="cakeModal" tabindex="-1" aria-labelledby="cakeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cakeModalLabel">Cake Categories</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6 d-flex align-items-start">
+                        <div class="col-md-6 d-flex flex-column align-items-start">
+                            <img src="../static/menu_items/chocolate-cake.jpg" alt="Chocolate Cake" class="img-fluid mb-2" style="width: 100px; height: auto;">
+                            <p class="text-muted">Price: <span style="text-decoration: line-through;">₹500</span> <span style="color: red;">₹400</span></p>
+                            <p class="text-muted"><i class="fas fa-tags"></i> 20% off</p>
+                        </div>
+                        <div>
+                            <h6>Chocolate Cake</h6>
+                            <p>Rich and moist chocolate cake with a creamy chocolate frosting.</p>
+                            <div class="d-flex"></div>
+                            <div class="d-flex">
+                                <button type="button" class="btn btn-primary me-2">Order Now</button> <!-- Order Now Button -->
+                                <button type="button" class="btn btn-secondary"  onclick="addToCart('Chocolate Cake')">Add to Cart</button> <!-- Add to Cart Button -->
+                                <!-- <button type="button" class="btn btn-danger" onclick="removeFromCart('Chocolate Cake')">Remove from Cart</button> --> <!-- Remove from Cart Button -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-start">
+                        <div class="col-md-6 d-flex flex-column align-items-start">
+                            <img src="../static/menu_items/vanilla-cake.jpg" alt="Vanilla Cake" class="img-fluid mb-2" style="width: 100px; height: auto;">
+                            <p class="text-muted">Price: <span style="text-decoration: line-through;">₹450</span> <span style="color: red;">₹360</span></p>
+                            <p class="text-muted"><i class="fas fa-tags"></i> 20% off</p>
+                        </div>
+                        <div>
+                            <h6>Vanilla Cake</h6>
+                            <p>Classic vanilla cake with a smooth and creamy vanilla buttercream.</p>
+                            <div class="d-flex"></div>
+                            <div class="d-flex">
+                                <button type="button" class="btn btn-primary me-2">Order Now</button> <!-- Order Now Button -->
+                                <button type="button" class="btn btn-secondary"  onclick="addToCart('Vanilla Cake')">Add to Cart</button> <!-- Add to Cart Button -->
+                                <!-- <button type="button" class="btn btn-danger" onclick="removeFromCart('Vanilla Cake')">Remove from Cart</button> --> <!-- Remove from Cart Button -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-start">
+                        <div class="col-md-6 d-flex flex-column align-items-start">
+                            <img src="../static/menu_items/red-velvet-cake.jpg" alt="Red Velvet Cake" class="img-fluid mb-2" style="width: 100px; height: auto;">
+                            <p class="text-muted">Price: <span style="text-decoration: line-through;">₹550</span> <span style="color: red;">₹440</span></p>
+                            <p class="text-muted"><i class="fas fa-tags"></i> 20% off</p>
+                        </div>
+                        <div>
+                            <h6>Red Velvet Cake</h6>
+                            <p>Delicious red velvet cake with a tangy cream cheese frosting.</p>
+                            <div class="d-flex"></div>
+                            <div class="d-flex">
+                                <button type="button" class="btn btn-primary me-2">Order Now</button> <!-- Order Now Button -->
+                                <button type="button" class="btn btn-secondary"  onclick="addToCart('Red Velvet Cake')">Add to Cart</button> <!-- Add to Cart Button -->
+                                <!-- <button type="button" class="btn btn-danger" onclick="removeFromCart('Red Velvet Cake')">Remove from Cart</button> --> <!-- Remove from Cart Button -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-start">
+                        <div class="col-md-6 d-flex flex-column align-items-start">
+                            <img src="../static/menu_items/fruit-cake.jpg" alt="Fruit Cake" class="img-fluid mb-2" style="width: 100px; height: auto;">
+                            <p class="text-muted">Price: <span style="text-decoration: line-through;">₹600</span> <span style="color: red;">₹480</span></p>
+                            <p class="text-muted"><i class="fas fa-tags"></i> 20% off</p>
+                        </div>
+                        <div>
+                            <h6>Fruit Cake</h6>
+                            <p>Moist and flavorful fruit cake loaded with dried fruits and nuts.</p>
+                            <div class="d-flex"></div>
+                            <div class="d-flex">
+                                <button type="button" class="btn btn-primary me-2">Order Now</button> <!-- Order Now Button -->
+                                <button type="button" class="btn btn-secondary"  onclick="addToCart('Fruit Cake')">Add to Cart</button> <!-- Add to Cart Button -->
+                                <!-- <button type="button" class="btn btn-danger" onclick="removeFromCart('Fruit Cake')">Remove from Cart</button> --> <!-- Remove from Cart Button -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Pizza Modal -->
+<div class="modal fade" id="pizzaModal" tabindex="-1" aria-labelledby="pizzaModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="pizzaModalLabel">Pizza Categories</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>Margherita Pizza</h6>
+                        <p>Classic pizza with fresh tomatoes, mozzarella cheese, and basil.</p>
+                        <button type="button" class="btn btn-primary">Order Now</button> <!-- Order Now Button -->
+                    </div>
+                    <div class="col-md-6">
+                        <h6>Pepperoni Pizza</h6>
+                        <p>Delicious pizza topped with pepperoni slices and mozzarella cheese.</p>
+                        <button type="button" class="btn btn-primary">Order Now</button> <!-- Order Now Button -->
+                    </div>
+                    <div class="col-md-6">
+                        <h6>BBQ Chicken Pizza</h6>
+                        <p>Pizza topped with BBQ chicken, red onions, and cilantro.</p>
+                        <button type="button" class="btn btn-primary">Order Now</button> <!-- Order Now Button -->
+                    </div>
+                    <div class="col-md-6">
+                        <h6>Veggie Pizza</h6>
+                        <p>Pizza loaded with a variety of fresh vegetables and mozzarella cheese.</p>
+                        <button type="button" class="btn btn-primary">Order Now</button> <!-- Order Now Button -->
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Burger Modal -->
+<div class="modal fade" id="burgerModal" tabindex="-1" aria-labelledby="burgerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="burgerModalLabel">Burger Categories</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>Cheeseburger</h6>
+                        <p>Classic burger with a juicy beef patty and melted cheese.</p>
+                        <button type="button" class="btn btn-primary">Order Now</button> <!-- Order Now Button -->
+                    </div>
+                    <div class="col-md-6">
+                        <h6>Chicken Burger</h6>
+                        <p>Grilled chicken burger with lettuce, tomato, and mayo.</p>
+                        <button type="button" class="btn btn-primary">Order Now</button> <!-- Order Now Button -->
+                    </div>
+                    <div class="col-md-6">
+                        <h6>Veggie Burger</h6>
+                        <p>Delicious burger made with a variety of fresh vegetables.</p>
+                        <button type="button" class="btn btn-primary">Order Now</button> <!-- Order Now Button -->
+                    </div>
+                    <div class="col-md-6">
+                        <h6>Bacon Burger</h6>
+                        <p>Burger topped with crispy bacon and melted cheese.</p>
+                        <button type="button" class="btn btn-primary">Order Now</button> <!-- Order Now Button -->
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Pasta Modal -->
+<div class="modal fade" id="pastaModal" tabindex="-1" aria-labelledby="pastaModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="pastaModalLabel">Pasta Categories</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>Spaghetti Carbonara</h6>
+                        <p>Classic Italian pasta with creamy sauce, pancetta, and Parmesan cheese.</p>
+                        <button type="button" class="btn btn-primary">Order Now</button> <!-- Order Now Button -->
+                    </div>
+                    <div class="col-md-6">
+                        <h6>Fettuccine Alfredo</h6>
+                        <p>Rich and creamy Alfredo sauce served over fettuccine noodles.</p>
+                        <button type="button" class="btn btn-primary">Order Now</button> <!-- Order Now Button -->
+                    </div>
+                    <div class="col-md-6">
+                        <h6>Penne Arrabbiata</h6>
+                        <p>Spicy tomato sauce with garlic, chili, and penne pasta.</p>
+                        <button type="button" class="btn btn-primary">Order Now</button> <!-- Order Now Button -->
+                    </div>
+                    <div class="col-md-6">
+                        <h6>Lasagna</h6>
+                        <p>Layered pasta with meat sauce, ricotta, and mozzarella cheese.</p>
+                        <button type="button" class="btn btn-primary">Order Now</button> <!-- Order Now Button -->
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Order Now</button>  -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Salads Modal -->
+<div class="modal fade" id="saladsModal" tabindex="-1" aria-labelledby="saladsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="saladsModalLabel">Salad Categories</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>Caesar Salad</h6>
+                        <p>Classic Caesar salad with romaine lettuce, croutons, and Parmesan cheese.</p>
+                        <button type="button" class="btn btn-primary">Order Now</button> <!-- Order Now Button -->
+                    </div>
+                    <div class="col-md-6">
+                        <h6>Greek Salad</h6>
+                        <p>Fresh salad with tomatoes, cucumbers, olives, feta cheese, and olive oil.</p>
+                        <button type="button" class="btn btn-primary">Order Now</button> <!-- Order Now Button -->
+                    </div>
+                    <div class="col-md-6">
+                        <h6>Caprese Salad</h6>
+                        <p>Simple salad with fresh tomatoes, mozzarella, basil, and balsamic glaze.</p>
+                        <button type="button" class="btn btn-primary">Order Now</button> <!-- Order Now Button -->
+                    </div>
+                    <div class="col-md-6">
+                        <h6>Quinoa Salad</h6>
+                        <p>Healthy salad with quinoa, vegetables, and a lemon vinaigrette.</p>
+                        <button type="button" class="btn btn-primary">Order Now</button> <!-- Order Now Button -->
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Sprouts Modal -->
+<div class="modal fade" id="sproutsModal" tabindex="-1" aria-labelledby="sproutsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="sproutsModalLabel">Sprouts Categories</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>Bean Sprouts</h6>
+                        <p>Fresh and crunchy bean sprouts perfect for salads and stir-fries.</p>
+                        <button type="button" class="btn btn-primary">Order Now</button> <!-- Order Now Button -->
+                    </div>
+                    <div class="col-md-6">
+                        <h6>Alfalfa Sprouts</h6>
+                        <p>Nutritious alfalfa sprouts great for sandwiches and salads.</p>
+                        <button type="button" class="btn btn-primary">Order Now</button> <!-- Order Now Button -->
+                    </div>
+                    <div class="col-md-6">
+                        <h6>Broccoli Sprouts</h6>
+                        <p>Healthy broccoli sprouts with a mild, peppery flavor.</p>
+                        <button type="button" class="btn btn-primary">Order Now</button> <!-- Order Now Button -->
+                    </div>
+                    <div class="col-md-6">
+                        <h6>Radish Sprouts</h6>
+                        <p>Spicy radish sprouts that add a kick to any dish.</p>
+                        <button type="button" class="btn btn-primary">Order Now</button> <!-- Order Now Button -->
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Desserts Modal -->
+<div class="modal fade" id="dessertsModal" tabindex="-1" aria-labelledby="dessertsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="dessertsModalLabel">Dessert Categories</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>Chocolate Mousse</h6>
+                        <p>Rich and creamy chocolate mousse topped with whipped cream.</p>
+                        <button type="button" class="btn btn-primary">Order Now</button> <!-- Order Now Button -->
+                    </div>
+                    <div class="col-md-6">
+                        <h6>Tiramisu</h6>
+                        <p>Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cheese.</p>
+                        <button type="button" class="btn btn-primary">Order Now</button> <!-- Order Now Button -->
+                    </div>
+                    <div class="col-md-6">
+                        <h6>Cheesecake</h6>
+                        <p>Creamy cheesecake with a graham cracker crust and fruit topping.</p>
+                        <button type="button" class="btn btn-primary">Order Now</button> <!-- Order Now Button -->
+                    </div>
+                    <div class="col-md-6">
+                        <h6>Panna Cotta</h6>
+                        <p>Silky smooth panna cotta with a berry compote.</p>
+                        <button type="button" class="btn btn-primary">Order Now</button> <!-- Order Now Button -->
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Order Now</button>  -->
+            </div>
+        </div>
+    </div>
+</div>

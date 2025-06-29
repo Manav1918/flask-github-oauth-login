@@ -1,0 +1,53 @@
+.menu-item {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px; /* Set height */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .menu-item:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Adding images */
+  #cake {
+    background-image: url('./menu_items/cake.jpg');
+  }
+
+  #pizza {
+    background-image: url('./menu_items/pizza.jpg');
+  }
+  
+  #burger {
+    background-image: url('./menu_items/burger.jpg');
+  }
+  
+  #pasta {
+    background-image: url('./menu_items/pasta.jpg');
+  }
+  
+  #salads {
+    background-image: url('./menu_items/salads.jpg');
+  }
+  
+  #sprouts {
+    background-image: url('./menu_items/sprouts.jpg');
+  }
+   
+  #desserts {
+    background-image: url('./menu_items/desserts.jpg');
+  }
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.img-fluid {
+    animation: fadeIn 1s ease-in-out;
+}
