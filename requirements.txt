@@ -1,0 +1,4 @@
+flask 
+requests-oauthlib
+flask-mail
+mysql-connector-python
